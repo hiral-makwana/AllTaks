@@ -1,0 +1,45 @@
+Videos:
+-https://www.youtube.com/watch?v=fUET0TNkeHI&list=PLolI8AY2AS9YO1kf0i_ui5_sKtxZg-yiR&index=22
+Sequelize:
+- https://sequelize.org/master/manual/model-querying-basics.html
+- basic: https://www.section.io/engineering-education/introduction-to-sequalize-orm-for-nodejs/
+Cors:
+- https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
+Pagination:
+-https://www.javacodegeeks.com/how-to-do-pagination-in-node-js.html
+Crud:
+-https://medium.com/techno101/crud-using-node-js-express-and-sequelize-82c10ef3b346
+Getter,Setter & Virtual Methods
+-https://egghead.io/lessons/node-js-sequelize-getters-setters-and-virtual-columns
+Associations:
+-https://medium.com/@andrewoons/how-to-define-sequelize-associations-using-migrations-de4333bf75a7
+-https://codehandbook.org/implement-has-many-association-in-sequelize/
+-https://www.topcoder.com/thrive/articles/one-to-many-relationships-in-mysql-database-using-sequelize-orm
+Transaction:
+-https://javascript.plainenglish.io/sequelize-transactions-4ca7b6491e86
+polymorphic association:
+-https://codinglollypop.medium.com/polymorphic-association-in-sequelize-with-migration-bc084af2ba78
+body-parser,express,multer etc packages
+-http://expressjs.com/en/resources/middleware/body-parser.html
+-https://nodejs.org/api/n-api.html
+-https://expressjs.com/en/5x/api.html#express
+Multer:
+-https://laratutorials.com/node-js-express-rest-api-file-upload-to-mysql-database/
+(jwt.io-decoder)
+javascript rules:
+-https://standardjs.com/rules.html
+CSV file upload/download:
+-https://www.bezkoder.com/node-js-download-csv-file/
+PasspostLogin:
+-https://code.tutsplus.com/tutorials/using-passport-with-sequelize-and-mysql--cms-27537
+facebook ID SECRETID:
+-https://medium.com/@Priyankakondajj/how-to-generate-facebook-app-id-and-app-secret-create-test-app-and-delete-an-app-26b7b5d8b981
+facebook login:
+-https://medium.com/@Priyankakondajj/facebook-authentication-using-node-js-305f942d1b9e
+-https://codeburst.io/creating-a-social-networking-mini-site-express-app-f3a515af5be5
+facebook APPID:1059815144571650
+facebook SECRETKEY:c594690577d840fea5e836df2f14065c
+INSTAGRAM ID :327554106018666
+INSTAGRAM APP SECRET:ff768b2f2fa4000110511a1b1b33166c
+STRIPE:https://www.youtube.com/watch?v=mI_-1tbIXQI&list=PLZlA0Gpn_vH_uZs4vJMIhcinABSTUH2bY&index=2
+

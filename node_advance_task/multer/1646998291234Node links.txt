@@ -1,0 +1,25 @@
+Videos:
+-https://www.youtube.com/watch?v=fUET0TNkeHI&list=PLolI8AY2AS9YO1kf0i_ui5_sKtxZg-yiR&index=22
+Sequelize:
+- https://sequelize.org/master/manual/model-querying-basics.html
+- basic: https://www.section.io/engineering-education/introduction-to-sequalize-orm-for-nodejs/
+Cors:
+- https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
+Pagination:
+-https://www.javacodegeeks.com/how-to-do-pagination-in-node-js.html
+Crud:
+-https://medium.com/techno101/crud-using-node-js-express-and-sequelize-82c10ef3b346
+Getter,Setter & Virtual Methods
+-https://egghead.io/lessons/node-js-sequelize-getters-setters-and-virtual-columns
+Associations:
+-https://medium.com/@andrewoons/how-to-define-sequelize-associations-using-migrations-de4333bf75a7
+-https://codehandbook.org/implement-has-many-association-in-sequelize/
+-https://www.topcoder.com/thrive/articles/one-to-many-relationships-in-mysql-database-using-sequelize-orm
+Transaction:
+-https://javascript.plainenglish.io/sequelize-transactions-4ca7b6491e86
+polymorphic association:
+-https://codinglollypop.medium.com/polymorphic-association-in-sequelize-with-migration-bc084af2ba78
+body-parser,express,multer etc packages
+-http://expressjs.com/en/resources/middleware/body-parser.html
+-https://nodejs.org/api/n-api.html
+-https://expressjs.com/en/5x/api.html#express
