@@ -1,22 +1,31 @@
-const express = require("express");
-const cors = require("cors");
+const express = require('express');
+const cors = require('cors');
 const app = express();
+const db = require('./models')
+const swaggerDocument = require('./swagger.json')
+const swaggerUi = require('swagger-ui-express')
 
-var corsOptions = {
-  origin: "http://localhost:3000"
-};
+app.use(cors());
+// const swaggerOptions = {
+//   swaggerDefinition :{
+//     info:{
+//       title:"Library API",
+//       version:'1.0.0'
+//     }
+//   },
+//   apis:['server.js']
+// }
+app.use(
+  '/api-docs',
+  swaggerUi.serve, 
+  swaggerUi.setup(swaggerDocument)
+);
+app.use(express.json())
+app.use(express.urlencoded( { extended:true } ))
 
-app.use(cors(corsOptions));
-
-app.use(express.json()); 
-app.use(express.urlencoded({ extended: true }));   
-const db = require("./app/models");
-
-db.sequelize.sync();
-
-require("./app/routes/turorial.routes")(app);
-
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+db.sequelize.sync().then(() => {
+    app.listen(3000, () => {
+        console.log(`Server is running on port 3000.`);
 });
+});
+require("./routes/student.routes")(app);

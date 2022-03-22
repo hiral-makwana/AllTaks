@@ -1,0 +1,62 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "My User Project CRUD",
+      "description": "My User Project Application API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Users",
+        "description": "API for users in the system"
+      }
+    ],
+    "paths": {
+      "/findall": {
+        "get": {
+          "tags": ["GET All Users"],
+          "summary": "Get all users in system",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "User": {
+        "required": ["name", "city", "email", "contact", "password"],
+        "properties": {
+          "name": {
+            "type": "string"
+        },
+          "city": {
+            "type": "string"
+        },
+          "email": {
+            "type": "string"
+        },
+          "contact": {
+            "type": "integer"
+        },
+          "password": {
+            "type": "string"
+        }
+    }
+      },
+      "Users": {
+        "type": "array",
+        "$ref": "#/definitions/User"
+      }
+    }
+  }
