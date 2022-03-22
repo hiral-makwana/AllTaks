@@ -24,7 +24,7 @@
           "summary": "Get all users in system",
           "responses": {
             "200": {
-              "description": "OK",
+              "description": "OK" ,
               "schema": {
                 "$ref": "#/definitions/Users"
               }
