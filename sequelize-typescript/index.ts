@@ -14,7 +14,8 @@ app.post('/create', async (req:Request, res:Response) => {
     }catch (e){
         res.json({msg:"fail to ctreate",e})
     }
-} )
+} );
+//without req.body
 //const createUser = () => {
   //  console.log(users)
    // users.map(users => {
@@ -27,12 +28,15 @@ app.post('/create', async (req:Request, res:Response) => {
  //   })
 //}
 //createUser();
-app.get('/', (req, res) => {
-    db.User.findAll({
-        include: {
-            model: db.Project
-        }
-    }).then((result: object) => res.json(result)).catch((err: object) => console.error(err));
+app.get('/findall', (req, res) => {
+    try{
+       const data = db.User.findAll({ })
+        return res.json(data)
+
+    }catch (e){
+        return res.json({msg:"data not found..", e})
+    }
+    
 })
 
 
