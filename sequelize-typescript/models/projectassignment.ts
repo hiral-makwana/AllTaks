@@ -20,9 +20,6 @@ module.exports = (sequelize: any, DataTypes: any) => {
     ProjectId!: number;
     UserId!: string;
 
-    static associate(models: any) {
-      // define association here
-    }
   };
   ProjectAssignment.init({
     ProjectId: {

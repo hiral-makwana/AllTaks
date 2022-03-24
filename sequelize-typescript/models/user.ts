@@ -1,8 +1,6 @@
 'use strict';
 
-import {
-  Model, UUIDV4
-} from 'sequelize';
+import { Model, UUIDV4 } from 'sequelize';
 
 interface UserAttributes {
   id: string;
@@ -14,21 +12,12 @@ interface UserAttributes {
 module.exports = (sequelize: any, DataTypes: any) => {
   class User extends Model<UserAttributes> 
   implements UserAttributes {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    id!: string;
-    name!: string;
-    email!: string;
-    password!: string;
-    static associate(models: any) {
-      // define association here
-      User.belongsToMany(models.Project, {
-        through: 'ProjectAssignments'
-      })
-    }
+    
+   declare id: string;
+   declare name: string;
+    declare email: string;
+    declare password: string;
+
   };
   User.init({
     id: {
