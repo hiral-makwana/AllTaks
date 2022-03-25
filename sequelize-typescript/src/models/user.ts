@@ -2,7 +2,7 @@
 
 import { Model, UUIDV4 } from 'sequelize';
 
-interface UserAttributes {
+export default interface UserAttributes {
   id: string;
   name: string;
   email: string;

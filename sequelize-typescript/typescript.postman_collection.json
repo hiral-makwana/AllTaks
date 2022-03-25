@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "bbb65431-fe7e-4a7e-9f89-304013547f2a",
+		"name": "typescript",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":8,\r\n    \"name\":\"hm\",\r\n    \"email\":\"hiral@gaui.com\",\r\n    \"password\":\"4265\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"hiral@gaui.com\",\r\n    \"password\":\"4265\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "welcome(auth)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgiLCJpYXQiOjE2NDgxOTg1NjksImV4cCI6MTY0ODIwMjE2OX0.VZy9NgciroylB6yXy-w1-La7QKSmGK2wHo_Bh_qTvQk",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/wlcm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wlcm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findallUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/findall",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"findall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateuserbyid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":8,\r\n    \"name\":\"hiral m\",\r\n    \"email\":\"hiral@gaui.com\",\r\n    \"password\":\"4265\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/update/8",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteuserbyid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete/8",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
