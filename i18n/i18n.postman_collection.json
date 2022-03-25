@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "ad9d2508-fc83-44b1-8e3e-26d2d9503769",
+		"name": "i18n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ur",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		}
+	]
+}
